@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #ff0077;
+}
+
+header {
+    text-align: center;
+    padding: 30px 15px;
+    border-bottom: 2px solid #ff0077;
+}
+
+nav {
+    text-align: center;
+    background: #111;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active {
+    color: #ff0077;
+    border-bottom: 2px solid #ff0077;
+}
+
+section {
+    padding: 50px 15px;
+    text-align: center;
+}
+
+.hero {
+    background: url('https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg') center/cover no-repeat;
+    color: #fff;
+    padding: 120px 15px;
+    font-size: 2em;
+}
+
+.galeria-container {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.galeria-container img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform .4s;
+}
+
+.galeria-container img:hover {
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 15px auto;
+    width: 80%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    margin-top: 30px;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #25D366;
+    padding: 18px;
+    border-radius: 50%;
+    font-size: 1.7em;
+    text-decoration: none;
+    z-index: 200;
+}
+/* ---- Serviços em Cards ---- */
+.servicos-grid {
+    display: grid;
+    gap: 15px;
+    max-width: 900px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.servico-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ff0077;
+    transition: .4s;
+}
+
+.servico-card:hover {
+    background: #ff0077;
+    color: #000;
+}
+
+/* ---- Form WhatsApp ---- */
+#form-whatsapp {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#form-whatsapp input,
+#form-whatsapp textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#form-whatsapp button {
+    background: #ff0077;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#form-whatsapp button:hover {
+    opacity: .85;
+}
+/* ====== ESTILO GERAL ====== */
+section {
+  margin: 60px auto;
+  max-width: 500px;
+  background-color: #111;
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 0, 100, 0.3);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 0, 100, 0.5);
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #ff0077;
+}
+
+section p {
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* ====== FORMULÁRIOS ====== */
+form, .form-cadastro, .form-pagamento {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  color: #ff0077;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #222;
+  color: white;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.linha-inputs {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  background-color: #ff0077;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff0077;
+}
