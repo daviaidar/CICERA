@@ -20,6 +20,14 @@ header {
     border-bottom: 2px solid #ff0077;
 }
 
+header img {
+    width: 100%;          /* ocupa toda a largura do header */
+    max-height: 270px;    /* controla a altura máxima */
+    object-fit: cover;    /* corta o excesso da imagem sem distorcer */
+    border-radius: 10px;  /* opcional, deixa mais bonito */
+}
+
+
 nav {
     text-align: center;
     background: #111;
@@ -47,7 +55,7 @@ section {
 }
 
 .hero {
-    background: url('https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg') center/cover no-repeat;
+    background: url('back.jpg') center/cover no-repeat;
     color: #fff;
     padding: 120px 15px;
     font-size: 2em;
@@ -155,7 +163,7 @@ footer {
 /* ====== ESTILO GERAL ====== */
 section {
   margin: 60px auto;
-  max-width: 500px;
+  max-width: none;
   background-color: #111;
   color: white;
   padding: 30px;
