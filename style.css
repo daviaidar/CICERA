@@ -15,18 +15,34 @@ h1, h2 {
 }
 
 header {
-    text-align: center;
-    padding: 30px 15px;
-    border-bottom: 2px solid #ff0077;
+  background-color: #000;
+  border-bottom: 2px solid #ff0077;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+
+  display: flex;              /* ativa o flexbox */
+  justify-content: center;    /* centraliza horizontalmente */
+  align-items: center;        /* centraliza verticalmente */
 }
 
+/* Imagem dentro do header */
 header img {
-    width: 100%;          /* ocupa toda a largura do header */
-    max-height: 270px;    /* controla a altura máxima */
-    object-fit: cover;    /* corta o excesso da imagem sem distorcer */
-    border-radius: 10px;  /* opcional, deixa mais bonito */
+  width: 55%;              /* ocupa toda a largura disponível */
+  height: auto;             /* mantém proporção da imagem */
+  max-height: 270px;        /* limite opcional de altura */
+  object-fit: cover;        /* corta bordas se necessário */
+  border-radius: 0;         /* pode deixar 0 se quiser o topo quadrado */
+  display: block;           /* remove espaço branco embaixo da imagem */
 }
 
+/* Responsividade — em telas pequenas, ajusta altura */
+@media (max-width: 768px) {
+  header img {
+    max-height: 180px;      /* reduz a altura em dispositivos móveis */
+  }
+}
 
 nav {
     text-align: center;
@@ -101,12 +117,23 @@ footer {
     right: 20px;
     bottom: 20px;
     background: #25D366;
-    padding: 18px;
+    padding: 16px;
     border-radius: 50%;
-    font-size: 1.7em;
+    font-size: 1.8em;
+    color: white;
     text-decoration: none;
     z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
 }
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
 /* ---- Serviços em Cards ---- */
 .servicos-grid {
     display: grid;
@@ -233,4 +260,12 @@ button {
 
 button:hover {
   background-color: #ff0077;
+}
+a:focus, button:focus {
+  outline: 2px solid var(--cor-principal);
+  outline-offset: 3px;
+}
+.whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.6);
 }
