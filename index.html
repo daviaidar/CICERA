@@ -18,9 +18,11 @@
     <a href="#sobre">Sobre</a>
     <a href="#galeria">Galeria</a>
     <a href="#servicos">Serviços</a>
-    <a href="#contato">Contato</a>
-    <a href="pagamento">Pagamento</a>
-    <a href="cadastro">Cadastro</a>
+    <a href="#contato">Contato</a>  
+    <a href="#agendamento">Agendamento</a> 
+    <a href="#pagamento">Pagamento</a>
+    <a href="#avaliacao">Avaliação</a> 
+    <a href="#cadastro">Cadastro</a>
 </nav>
 
 <section id="home" class="hero">
@@ -113,11 +115,45 @@
     </form>
 </section>
 
+<br><br><br>
+
+<section id="agendamento" class="agendamento">
+  <h2>📅 Agende Seu Horário</h2>
+  <p>Garanta seu atendimento no horário que for mais conveniente para você.</p>
+
+  <div class="form-agendamento">
+    <label for="nome-agendamento">Nome Completo</label>
+    <input type="text" id="nome-agendamento" placeholder="Seu nome completo">
+
+    <label for="telefone-agendamento">Telefone</label>
+    <input type="tel" id="telefone-agendamento" placeholder="(11) 99999-9999">
+
+    <label for="servico">Serviço Desejado</label>
+    <select id="servico">
+      <option>Escova e Hidratação</option>
+      <option>Corte Feminino</option>
+      <option>Coloração</option>
+      <option>Manicure e Pedicure</option>
+      <option>Design de Sobrancelhas</option>
+    </select>
+
+    <label for="data">Data</label>
+    <input type="date" id="data">
+
+    <label for="hora">Horário</label>
+    <input type="time" id="hora">
+
+    <button class="btn-agendar">Confirmar Agendamento</button>
+  </div>
+</section>
+
+<br><br><br>
 
 <!-- Botão WhatsApp -->
 <a class="whatsapp" href="https://wa.me/5517999999999" target="_blank">
   <i class="fa-brands fa-whatsapp"></i>
 </a>
+
 <br><br><br>
 
 
@@ -156,6 +192,29 @@
 
 <br><br><br>
 
+
+<section id="avaliacao" class="avaliacao">
+  <h2>💬 Avalie Nosso Serviço</h2>
+  <p>Sua opinião é muito importante para continuarmos melhorando e oferecendo o melhor atendimento.</p>
+
+  <div class="form-avaliacao">
+    <label for="nome-avaliacao">Seu Nome</label>
+    <input type="text" id="nome-avaliacao" placeholder="Digite seu nome">
+
+    <label>Nota do Atendimento</label>
+    <div class="estrelas">
+      ★★★★★
+    </div>
+
+    <label for="comentario">Comentário</label>
+    <textarea id="comentario" rows="4" placeholder="Conte como foi sua experiência..."></textarea>
+
+    <button class="btn-avaliar">Enviar Avaliação</button>
+  </div>
+</section>
+
+<br><br><br>
+
 <section id="cadastro" class="cadastro">
   <h2>🧍 Cadastro</h2>
   <p>Preencha seus dados para criar seu perfil.</p>
@@ -181,7 +240,7 @@
 
 <footer>
     <br><br>
-    <p>© 2024 Above Mission - Todos os direitos reservados</p>
+    <p>© 2025 Above Mission - Todos os direitos reservados</p>
     <br><br>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.7518114611476!2d-49.3825205!3d-20.841726299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdb2c129beab8f%3A0x555e95f9b8ee76a5!2sSal%C3%A3o%20de%20beleza%20Cicera%20Sangregorio!5e0!3m2!1spt-BR!2sbr!4v1761598163782!5m2!1spt-BR!2sbr" 
     width="600" height="450" style="border:0;"
